@@ -1,0 +1,82 @@
+@import: './colors.less';
+
+//----------------------------------------------Nav-----------------------------------------------
+.nav-div{
+  width: 100%;
+  margin-bottom: 35px;
+}
+.to-home{
+  display: block;
+  margin: 10px auto 10px auto ;
+  text-align: center;
+  width: 140px;
+  color: @colorNavLogo;
+  font-size: 30px;
+  cursor: pointer;
+  span{
+    font-size: 14px;
+  }
+}
+.nav-btn{
+  width: 98%;
+  margin: 10px auto 10px auto ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: @colorPrimaryText;
+  font-weight: bolder;
+  font-size: 17px;
+  cursor: pointer;
+  border-bottom: 0px solid @colorPrimary;
+
+  .slider {
+    height: 2px;
+    background-color: #000;
+    width: 0%;
+    transition: width 1s;
+  }
+  &:hover .slider{
+    width: 100%;
+  }
+}
+.nav-border{
+  box-shadow: 1px 4px 2px @colorPrimaryText;
+}
+/*----------------------------------------HOME-------------------------------------*/
+.home-container{
+  text-align: center;
+}
+.home-container img{
+  border-radius: 50%;
+}
+.home-container h1{
+  color: @colorPrimary;
+}
+/*----------------------------------------ANTD-EX-------------------------------------*/
+.antdEx-container{
+  width: 94%;
+  margin: 0px auto 0px auto;
+  padding: 25px;
+  background-color: @colorTransparentGrey;
+  button{
+    margin: 30px;
+  }
+}
+/*----------------------------------------REDUX-EX-------------------------------------*/
+.reduxEx-container{
+  width: 94%;
+  margin: 0px auto 0px auto;
+  padding: 25px;
+  background-color: @colorTransparentGrey;
+  p{
+    color: @colorPrimaryText;
+    strong{
+      color: @colorSecundaryText;
+    }
+  }
+  pre{
+    color: @colorSecundaryText;
+  }
+}
