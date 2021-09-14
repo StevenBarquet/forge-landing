@@ -17,6 +17,12 @@
     font-size: 14px;
   }
 }
+.slider {
+  height: 2px;
+  background-color: @colorPrimaryText;
+  width: 0%;
+  transition: width 1s;
+}
 .nav-btn{
   width: 98%;
   margin: 10px auto 10px auto ;
@@ -30,19 +36,23 @@
   font-size: 17px;
   cursor: pointer;
   border-bottom: 0px solid @colorPrimary;
-
+}
+.nav-col{
   .slider {
-    height: 2px;
-    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+    left: 18%;
+    height: 4px;
+    background-color: @colorPrimary;
     width: 0%;
     transition: width 1s;
   }
   &:hover .slider{
-    width: 100%;
+    width: 64%;
   }
 }
 .nav-border{
-  box-shadow: 1px 4px 2px @colorPrimaryText;
+  color: @colorPrimary;
 }
 /*----------------------------------------HOME-------------------------------------*/
 .home-container{

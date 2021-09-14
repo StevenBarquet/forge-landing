@@ -3,8 +3,10 @@ import React, { useState, ReactElement } from 'react';
 import { MenuFoldOutlined, MenuOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import { Row, Col } from 'antd';
+// ---Components
+import NavButton from 'Comp/NavBar/NavbarItems/NavButton';
 // ---Others
-import { appConfig } from 'Others/global-config';
+// import { appConfig } from 'Others/global-config';
 
 // ---AUX COMPONENTS
 interface AuxProps1 {
@@ -12,42 +14,19 @@ interface AuxProps1 {
 }
 function JustButtons(props: AuxProps1) {
   const { currentPath } = props;
+  const grid = {
+    xs: 24,
+    sm: 24,
+    md: 8,
+    lg: 8,
+    xl: 8,
+    xxl: 8
+  };
   return (
     <>
-      <Col xs={24} sm={24} lg={8}>
-        <Link href="/">
-          <div
-            className={currentPath === '/' ? 'nav-btn nav-border' : 'nav-btn'}
-          >
-            Crea
-            <div className="slider" />
-          </div>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} lg={8}>
-        <Link href={`/AntdExPage?${appConfig.productsURL}`}>
-          <div
-            className={
-              currentPath === '/AntdExPage' ? 'nav-btn nav-border' : 'nav-btn'
-            }
-          >
-            Servicios
-            <div className="slider" />
-          </div>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} lg={8}>
-        <Link href="/ReduxExPage">
-          <div
-            className={
-              currentPath === '/ReduxExPage' ? 'nav-btn nav-border' : 'nav-btn'
-            }
-          >
-            Asesorias técnicas
-            <div className="slider" />
-          </div>
-        </Link>
-      </Col>
+      <NavButton label="Crea" path="/" currentPath={currentPath} grid={grid} />
+      <NavButton label="Servicios" path="/AntdExPage" currentPath={currentPath} grid={grid} />
+      <NavButton label="Asesorias técnicas" path="/ReduxExPage" currentPath={currentPath} grid={grid} />
     </>
   );
 }
