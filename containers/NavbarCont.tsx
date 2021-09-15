@@ -35,7 +35,7 @@ export default function NavbarCont(): ReactElement {
 
   return (
     <>
-      <ClientMenu currentPath={currentPath} isMovil={isMovil} logo="/images/forge10.png" />
+      <ClientMenu currentPath={currentPath} isMovil={isMovil} logo="/images/forge-sm-web.png" />
       <GlobalComponents />
     </>
   );

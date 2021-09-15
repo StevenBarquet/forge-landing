@@ -41,11 +41,13 @@
         "comma-dangle": ["error", "never"],
         "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/anchor-is-valid": "warn",
+        "no-unused-vars": 0,
         // Typescript
         "react/react-in-jsx-scope": "off",
         "react/jsx-props-no-spreading": "off",
         "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": true, "variables": true }],
         "import/extensions": [ "error", "ignorePackages", { "ts": "never", "tsx": "never"}],
-        "react/jsx-filename-extension": [ 1, { "extensions": [".js", ".jsx", ".ts", ".tsx"]}]
+        "react/jsx-filename-extension": [ 1, { "extensions": [".js", ".jsx", ".ts", ".tsx"]}],
+        "@typescript-eslint/no-unused-vars": [1, { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
     }
 }

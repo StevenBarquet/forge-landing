@@ -5,6 +5,7 @@ import { AppProps } from 'next/app';
 // ---Containers
 import NavbarCont from 'Cont/NavbarCont';
 // ---Others
+import 'Styles/colors.less';
 import 'Styles/index.less';
 // ---Redux
 import { wrapper } from '@Redux/store';

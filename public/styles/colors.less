@@ -1,11 +1,14 @@
 
 //----------------------App------------------
-@colorPrimary: #0043e5;
-@colorPrimaryLigth: #3370ff;
+@colorPrimary: #0045e6;
+@colorPrimaryLigth: #1a81ff;
+@colorPrimaryLigther: #4d9dff;
 @colorPrimaryDark: #80461f;
 @colorPrimaryDarkLigth: #9b4e1b;
 @colorPrimaryDarkest: #3b2f27;
 @colorPrimaryDarkestLigth: #ffba39;
+@colorSecondary: #c510af;
+@colorSecondaryLigth: #f04cdd;
 @colorThree: #de6200;
 @colorThreeLigth: #c4651c;
 @colorFour: #474747;
@@ -15,8 +18,9 @@
 @colorFiveLigthter: #c6e7a6;
 //----------------------Texts------------------
 @colorPrimaryText: #474747;
-@colorSecundaryText: #f2d9a6;
-@colorSecundaryTextLigth: #f5e0b8;
+@colorSecondaryText: #ffffff;
+@colorThreeText: @colorPrimary;
+@colorThreeTextLigther: @colorPrimaryLigther;
 //----------------------Colors------------------
 @colorWhite: #ffffff;
 @colorLight: #ffffff;
@@ -24,14 +28,25 @@
 @colorDark: #474747;
 @colorDarkLigth: #6e6d6d;
 @colorDarkLighter: #727272cc;
+@colorDarkDarker: #272727cb;
 @simpleColorYellow: #ffcc5e;
 @simpleColorGreen: #3ab415;
 //----------------------Specials------------------
+//---Others
+@colorSuccess: #3ab415;
+@colorSuccessLigth: #56d42f;
+@colorError: #ff4d4f;
+@colorErrorLigth: #e46769;
+@colorTransparentGreyDark: #646464b7;
+@colorTransparentGreyLigth: #64646481;
 //---Nav
+@colorNavBar: @colorDarkDarker;
 @colorNavLogo: @colorLight;
 @colorNavButtons: @colorThree;
 @colorNavButtonsLigth: @colorThreeLigth;
-@colorNavNavButtonsText: @colorLight;
+@colorNavNavButtonsText: @colorSecondaryText;
+@colorNavNavButtonsTextFocus: @colorSecondaryLigth;
+@colorNavNavButtonsTextHover: @colorPrimaryLigth;
 //---Footer
 @colorFooterBackground: @colorFour;
 @colorFooterBackText: @colorPrimaryText;
@@ -39,13 +54,6 @@
 //---Backgrounds
 @backgroundFallBack1: #ffffff;
 @backgroundImage1: url(/images/background.jpg);
-//---Others
-@colorSuccess: #3ab415;
-@colorSuccessLigth: #56d42f;
-@colorError: #ff4d4f;
-@colorErrorLigth: #e46769;
-@colorTransparentGrey: #64646481;
-
 //---------------------Antd Colors----------------
 @primary-color: @colorPrimary;
 @info-color: @primary-color;
@@ -53,6 +61,6 @@
 @processing-color: @colorPrimaryLigth;
 @error-color: @colorError;
 @text-color: @colorWhite; // major text color
-@text-color-secondary: @colorSecundaryText; // secondary text color
+@text-color-secondary: @colorSecondaryText; // secondary text color
 @component-background: @colorDarkLighter; // modal background
 @heading-color: @colorWhite; // Titulos
