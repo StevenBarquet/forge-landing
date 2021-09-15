@@ -10,7 +10,7 @@ import {
 } from 'Actions/appInfo';
 import { ReduxState } from 'Reducers';
 // ---Components
-import ClientMenu from 'Comp/NavBar/ClientMenu';
+import NavBar from 'Comp/NavBar';
 import GlobalComponents from 'Comp/NavBar/GlobalComponents';
 import isMovilDetector from 'Others/isMovilDetector';
 
@@ -35,7 +35,7 @@ export default function NavbarCont(): ReactElement {
 
   return (
     <>
-      <ClientMenu currentPath={currentPath} isMovil={isMovil} logo="/images/forge-sm-web.png" />
+      <NavBar currentPath={currentPath} isMovil={isMovil} logo="/images/forge-sm-web.png" />
       <GlobalComponents />
     </>
   );

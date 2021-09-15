@@ -1,16 +1,16 @@
 // ---Dependencys
 import React, { useState, ReactElement } from 'react';
-import { MenuFoldOutlined, MenuOutlined } from '@ant-design/icons';
+import { MenuFoldOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import { Row, Col } from 'antd';
 // ---Components
 import NavButton from 'Comp/NavBar/NavbarItems/NavButton';
-import NavButtonLogIn from 'Comp/NavBar/NavbarItems/NavButtonLogIn';
+import NavDropdown from 'Comp/NavBar/NavbarItems/NavDropdown';
 // ---Others
 // import { appConfig } from 'Others/global-config';
 // style={{ backgroundColor: 'greenyellow' }}
 
-// ---AUX COMPONENTS
+// -------------------------------------AUX COMPONENTS--------------------------------
 function JustButtons(props: { currentPath: string }) {
   const { currentPath } = props;
   const navGrid = {
@@ -29,32 +29,34 @@ function JustButtons(props: { currentPath: string }) {
     xl: { offset: 4, span: 4 },
     xxl: { offset: 4, span: 4 }
   };
+  const creaPaths = [
+    {
+      label: 'E-Comerce',
+      value: '/EcomercePage'
+    },
+    {
+      label: 'Página Web',
+      value: '/SimpleWebPage'
+    }
+  ];
   return (
     <Row>
-      <NavButton label="Crea" path="/" currentPath={currentPath} grid={navGrid} />
-      <NavButton
-        label="Servicios"
-        path="/AntdExPage"
-        currentPath={currentPath}
-        grid={navGrid}
-      />
-      <NavButton
-        label="Asesorias técnicas"
-        path="/ReduxExPage"
-        currentPath={currentPath}
-        grid={navGrid}
-      />
-      <NavButtonLogIn
-        path="/LoginPage"
-        currentPath={currentPath}
-        grid={logInGrid}
-      />
-      <NavButton
-        label="Ayuda"
-        path="/HelpPage"
-        currentPath={currentPath}
-        grid={navGrid}
-      />
+      <NavDropdown label="Crea" paths={creaPaths} currentPath={currentPath} grid={navGrid} />
+      <NavButton path="/AntdExPage" currentPath={currentPath} grid={navGrid}>
+        Servicios
+      </NavButton>
+      <NavButton path="/ReduxExPage" currentPath={currentPath} grid={navGrid}>
+        Asesorias técnicas
+      </NavButton>
+      <NavButton path="/LoginPage" currentPath={currentPath} grid={logInGrid}>
+        <>
+          <UserOutlined />
+          Iniciar sesión
+        </>
+      </NavButton>
+      <NavButton path="/HelpPage" currentPath={currentPath} grid={navGrid}>
+        Ayuda
+      </NavButton>
     </Row>
   );
 }
@@ -89,7 +91,7 @@ interface Props {
   currentPath: string;
 }
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function ClientMenu(props: Props): ReactElement {
+export default function Navbar(props: Props): ReactElement {
   const { isMovil, logo, currentPath } = props;
   const [menuVisible, setMenuVisible] = useState(false);
   return (

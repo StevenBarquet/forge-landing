@@ -1,4 +1,5 @@
 import { AxiosResponse, AxiosError } from 'axios';
+import { type } from 'os';
 
 export declare global {
   interface Window {
@@ -28,5 +29,14 @@ export interface ResponseStandar {
 export type RouteAsyncMethod = () => Promise<ResponseStandar>
 
 export interface IDParamsBody {
-  id: string
+  id: string;
 }
+
+export type SimpleTypes = string | boolean | number;
+
+export type ObjLabelValue = {
+  label: string;
+  value: SimpleTypes;
+}
+
+export type SimpleTypesObj = Record<string, SimpleTypes>

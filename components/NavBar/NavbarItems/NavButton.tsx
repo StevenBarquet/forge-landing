@@ -5,7 +5,7 @@ import { Col, ColProps } from 'antd';
 
 // ------------------------------------TYPES---------------------------------------
 interface Props {
-  label: string;
+  children?: string | ReactElement | ReactElement[];
   path: string;
   currentPath: string;
   grid: ColProps
@@ -13,7 +13,7 @@ interface Props {
 // -----------------------------------COMPONENT------------------------------------
 export default function NavButton(props: Props): ReactElement {
   const {
-    label, path, currentPath, grid
+    children, path, currentPath, grid
   } = props;
 
   return (
@@ -22,7 +22,7 @@ export default function NavButton(props: Props): ReactElement {
         <div
           className={currentPath === path ? 'nav-btn nav-border' : 'nav-btn'}
         >
-          {label}
+          {children}
         </div>
       </Link>
       <div className="slider" />
