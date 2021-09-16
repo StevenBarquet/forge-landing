@@ -1,8 +1,14 @@
 /*----------------------------------------VARIABLES-------------------------------------*/
 @font-face {
-  font-family: 'Questrial';
-  src: url('/fonts/Questrial/Questrial-Regular.ttf');
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Regular.ttf');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -20,19 +26,24 @@ button, input[type="submit"], input[type="reset"] {
   html,
   body {
     background-color: @backgroundFallBack1;
-    font-family: 'Questrial';
+    background: @backgroundImage1 repeat center center fixed;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    font-family: 'Roboto';
     margin: 0px;
     padding: 0px;
   }
   p{
     color: @colorPrimaryText;
     font-size: 18px;
-  span{
-    color: @colorThreeText;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0px 3px 0px 3px;
-  }
+    span{
+      color: @colorSecondaryText;
+      font-size: 22px;
+      font-weight: bold;
+      line-break: 10px;
+    }
   }
   /*-------------------------------------UTILITY STYLES----------------------------------*/
   .center-block{
