@@ -1,6 +1,6 @@
 // ---Dependencys
 import { ReactElement } from 'react';
-import Link from 'next/link';
+import Link from 'CComps/Link';
 import { Col, ColProps } from 'antd';
 
 // ------------------------------------TYPES---------------------------------------
@@ -18,7 +18,7 @@ export default function NavButton(props: Props): ReactElement {
 
   return (
     <Col className="nav-col" {...grid}>
-      <Link href={path}>
+      <Link to={path}>
         <div
           className={currentPath === path ? 'nav-btn nav-border' : 'nav-btn'}
         >

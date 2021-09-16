@@ -1,7 +1,7 @@
 // ---Dependencys
 import { ReactElement } from 'react';
 import { DownOutlined } from '@ant-design/icons';
-import Link from 'next/link';
+import Link from 'CComps/Link';
 import {
   Col, ColProps, Menu, Dropdown
 } from 'antd';
@@ -18,11 +18,9 @@ function DropdownMenu({ paths }: OtherProps) {
   return (
     <Menu>
       {paths.map((element) => (
-        <Menu.Item>
-          <Link href={`${element.value}`} passHref>
-            <a href={`${element.value}`}>
-              {element.label}
-            </a>
+        <Menu.Item key={element.label}>
+          <Link to={`${element.value}`}>
+            {element.label}
           </Link>
         </Menu.Item>
       ))}

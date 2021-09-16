@@ -1,7 +1,7 @@
 // ---Dependencys
 import React, { useState, ReactElement } from 'react';
 import { MenuFoldOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
-import Link from 'next/link';
+import Link from 'CComps/Link';
 import { Row, Col } from 'antd';
 // ---Components
 import NavButton from 'Comp/NavBar/NavbarItems/NavButton';
@@ -97,11 +97,9 @@ export default function Navbar(props: Props): ReactElement {
   return (
     <Row className="nav-div">
       <Col xs={24} sm={24} md={4} lg={4} xl={6} xxl={6}>
-        <Link href="/" passHref>
+        <Link to="/">
           <div className="to-home">
-            <a href="replace">
-              <img src={logo} alt="Shelly" width="100%" />
-            </a>
+            <img src={logo} alt="Shelly" width="100%" />
           </div>
         </Link>
       </Col>
