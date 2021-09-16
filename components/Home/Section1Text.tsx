@@ -22,7 +22,7 @@ export default function Section1Text(): ReactElement {
           {' '}
           <span>En forge nos encargamos de todo</span>
           {' '}
-          para que sólo te preocupes de tu negocio
+          para que sólo te preocupes de tu negocio.
         </p>
         <p>
           <span>Comienza ya a disfrutar</span>
