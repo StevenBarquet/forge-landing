@@ -11,6 +11,8 @@ export default function Left(): ReactElement {
           {' '}
           <h2>experiencia</h2>
           {' '}
+          <h3>, y</h3>
+          {' '}
           <h1>
             ¡SIN PROGRMAR UNA LINEA DE CÓDIGO!
           </h1>
