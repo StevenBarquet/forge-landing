@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 import { Html5Filled } from '@ant-design/icons';
 
 // ----------------------------------------COMPONENT----------------------------------------
-export default function Section1Text(): ReactElement {
+export default function Left(): ReactElement {
   return (
     <>
       <section className="section-1">
@@ -20,9 +20,17 @@ export default function Section1Text(): ReactElement {
           ,
           plataforma o sistema.
           {' '}
-          <span>En forge nos encargamos de todo</span>
+          En
           {' '}
-          para que sólo te preocupes de tu negocio.
+          forge
+          {' '}
+          nos encargamos de todo
+          {' '}
+          para que
+          {' '}
+          <b>sólo</b>
+          {' '}
+          te preocupes de tu negocio.
         </p>
         <p>
           <span>Comienza ya a disfrutar</span>
@@ -33,7 +41,11 @@ export default function Section1Text(): ReactElement {
           {' '}
           <Html5Filled />
           {' '}
-          sin que se vuelva un dolor de cabeza.
+          sin que se vuelva un dolor de cabeza desde
+          {' '}
+          <span>$269.00 MX</span>
+          {' '}
+          al mes.
         </p>
       </section>
     </>

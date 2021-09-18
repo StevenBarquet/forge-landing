@@ -4,6 +4,7 @@ import { ReactElement } from 'react';
 import { AppProps } from 'next/app';
 // ---Containers
 import NavbarCont from 'Cont/NavbarCont';
+import Footer from 'Cont/Footer';
 // ---Others
 import 'Styles/colors.less';
 import 'Styles/index.less';
@@ -15,6 +16,7 @@ function App({ Component, pageProps }: AppProps): ReactElement {
     <>
       <NavbarCont />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

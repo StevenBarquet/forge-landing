@@ -5,12 +5,13 @@ import {
   UPDATE_PATH,
   UPDATE_LOADING
 } from 'Types';
-import { Action, ReducerState } from '@Reducers/appInfo/customTypes';
+import { Action, ReducerState, ResponsiveData } from '@Reducers/appInfo/customTypes';
 import { RandObj } from '@Declarations';
 
 // -------------------------------------------STATE------------------------------------
-const INITIAL_STATE = {
+const INITIAL_STATE: ReducerState = {
   isMovil: false,
+  winSize: 'lg',
   isLoading: false,
   currentPath: '',
   currentParams: {}
@@ -23,7 +24,8 @@ const reducer = (state = INITIAL_STATE, action: Action) : ReducerState => {
     case CHANGE_RESPONSIVE:
       return {
         ...state,
-        isMovil: <boolean>payload
+        isMovil: (payload as ResponsiveData).isMovil,
+        winSize: (payload as ResponsiveData).winSize
       };
 
     case UPDATE_PATH:

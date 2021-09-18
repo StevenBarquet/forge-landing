@@ -59,6 +59,48 @@
     color: @colorNavNavButtonsTextHover;
   }
 }
+//----------------------------------------FOOTER-------------------------------------
+footer{
+  width: 100%;
+  min-height: 70px;
+  background-color: @colorNavBar;
+  padding: 15px;
+  margin-top: 50px;
+  h1{
+    color: @colorThreeTextLigther;
+    font-size: 28px;
+    text-align: center;
+    line-height: 100%;
+  }
+  h2{
+    font-size: 14px;
+    text-align: center;
+    line-height: 100%;
+    margin: 10px 0px -10px 0px;
+    a{
+      color: @colorThreeTextLigther;
+    }
+  }
+  .contact-sticker{
+    section{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    p{
+      color: @colorWhite;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 5px;
+    }
+    svg{
+      font-size: 33px;
+      margin: 0px auto 0px auto;
+      display: block;
+    }
+  }
+}
 /*----------------------------------------HOME-------------------------------------*/
 .home-container {
   width: 92%;
@@ -170,6 +212,81 @@
       line-height: 16px;
       position: relative;
       z-index: 1;
+    }
+  }
+  .section-3-1{
+    width: 92%;
+    max-width: 370px;
+    margin: 32px auto 0px auto;
+    padding: 10px;
+    h2{
+      line-height: 120%;
+      color: @colorPrimaryText;
+      font-weight: bold;
+      font-size: 40px;
+      display: inline;
+    }
+    h3{
+      line-height: 120%;
+      color: @colorPrimaryTextLigth;
+      font-weight: bold;
+      font-size: 24px;
+      display: inline;
+    }
+    h1{
+      line-height: 120%;
+      color: @colorPrimaryTextDark;
+      font-weight: bold;
+      font-size: 52px;
+      display: inline;
+    }
+      .ant-btn{
+        background-color: #158f20;
+        font-weight: bold;
+        border-radius: 15px;
+        border-color: #bcf5c1;
+      }
+      .ant-btn-primary:hover, .ant-btn-primary:focus {
+        border-color: #158f20;
+    }
+  }
+  .section-3-2{
+    width: 98%;
+    margin: 32px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      border-radius: 8px;
+    }
+  }
+  .section-5{
+    margin: 20px 0px 100px 0px;
+    text-align: center;
+    h1{
+      padding: 0px 30px 0px 30px;
+      font-weight: bold;
+      font-size: 24px;
+      //line-height: 28px;
+      color: @colorPrimaryText;
+    }
+    p{
+      padding: 0px 30px 0px 30px;
+      margin-top: -15px;
+      color: @colorSecondaryText;
+      font-size: 14px;
+    }
+    hr{
+      width: 85%;
+    }
+  }
+  .section-6{
+    h1{
+      color: @colorPrimaryText;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
     }
   }
 }

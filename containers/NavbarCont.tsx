@@ -9,6 +9,7 @@ import {
   updateParams
 } from 'Actions/appInfo';
 import { ReduxState } from 'Reducers';
+import { ResponsiveData } from '@Redux/reducers/appInfo/customTypes';
 // ---Components
 import NavBar from 'Comp/NavBar';
 import GlobalComponents from 'Comp/NavBar/GlobalComponents';
@@ -21,7 +22,7 @@ export default function NavbarCont(): ReactElement {
   const { isMovil } = useSelector((reducers: ReduxState) => reducers.appInfoReducer);
   // Redux Actions
   const dispatchR = useDispatch();
-  const updateResponsiveData = (flag: boolean) => dispatchR(changeResponsiveFlag(flag));
+  const updateResponsiveData = (data: ResponsiveData) => dispatchR(changeResponsiveFlag(data));
   const updateCurrentPath = () => dispatchR(updatePath(currentPath));
   const updateCurrentParams = () => dispatchR(updateParams(urlParams));
 

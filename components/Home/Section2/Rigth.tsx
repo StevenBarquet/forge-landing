@@ -4,7 +4,7 @@ import { ReactElement } from 'react';
 import { genericAlt } from 'Others/globalData';
 
 // ----------------------------------------COMPONENT----------------------------------------
-export default function Section2Images(): ReactElement {
+export default function Rigth(): ReactElement {
   return (
     <section className="section-2-2">
       <h1>Crea un sitio web fácil y rápido.</h1>
@@ -17,9 +17,10 @@ export default function Section2Images(): ReactElement {
         />
       </div>
       <p>
-        Creemos juntos una sitio web o una plataforma con todas las funciones de
-        un E-Commerce con todo lo que necesitas para comenzar, gestionar y hacer
-        crecer tu negocio.
+        <b>Crearemos para ti</b>
+        {' '}
+        un sitio web o un E-Commerce con todo lo que necesitas
+        para comenzar, gestionar o hacer crecer tu negocio.
       </p>
     </section>
   );

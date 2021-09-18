@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { genericAlt } from 'Others/globalData';
 
 // ----------------------------------------COMPONENT----------------------------------------
-export default function Section1Images({ isMovil } : { isMovil: boolean }): ReactElement {
+export default function Rigth({ isMovil } : { isMovil: boolean }): ReactElement {
   return (
     <div>
       <div className="image-front">
