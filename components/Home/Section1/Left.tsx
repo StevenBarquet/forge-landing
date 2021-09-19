@@ -8,7 +8,7 @@ export default function Left(): ReactElement {
     <>
       <section className="section-1">
         <h1>
-          Del negocio te encargas tú, de la tecnología nos preocupamos nosotros
+          &quot;Del negocio te encargas tú, de la tecnología nos preocupamos nosotros&quot;
         </h1>
         <p>
           <span>Olvídate ya de sufrir con freelancers</span>

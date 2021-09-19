@@ -10,7 +10,7 @@ export default function Rigth(): ReactElement {
       <h1>Crea un sitio web fácil y rápido.</h1>
       <div className="image-back">
         <img
-          src="/images/home/sec2.svg" // Route of the image file
+          src="/images/home/sec2.png" // Route of the image file
           height={401 * 0.7}
           width={364 * 0.7}
           alt={genericAlt}
