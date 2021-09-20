@@ -42,11 +42,11 @@ function JustButtons(props: { currentPath: string }) {
   return (
     <Row>
       <NavDropdown label="Crea" paths={creaPaths} currentPath={currentPath} grid={navGrid} />
-      <NavButton path="/AntdExPage" currentPath={currentPath} grid={navGrid}>
+      <NavButton path="/ServicesPage" currentPath={currentPath} grid={navGrid}>
         Servicios
       </NavButton>
-      <NavButton path="/ReduxExPage" currentPath={currentPath} grid={navGrid}>
-        Asesorias técnicas
+      <NavButton path="/ConsultoryPage" currentPath={currentPath} grid={navGrid}>
+        Asesorías técnicas
       </NavButton>
       <NavButton path="/LoginPage" currentPath={currentPath} grid={logInGrid}>
         <>

@@ -5,14 +5,14 @@ import Head from 'next/head';
 import InDevPage from 'CComps/InDevPage';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function EcomercePage(): ReactElement {
-  const finishDate = new Date('October 22, 2021 03:24:00');
+export default function ServicesPage(): ReactElement {
+  const finishDate = new Date('September 29, 2021 03:24:00');
   return (
     <>
       <Head>
-        <title>Forge | Crea tu comercio en linea</title>
+        <title>Forge | Servicios</title>
       </Head>
-      <InDevPage compName="Ecomerce" finishDate={finishDate as unknown as number} />
+      <InDevPage compName="Servicios" finishDate={finishDate as unknown as number} />
     </>
   );
 }
