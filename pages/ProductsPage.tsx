@@ -5,14 +5,14 @@ import Head from 'next/head';
 import InDevPage from 'CComps/InDevPage';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function ConsultoryPage(): ReactElement {
+export default function ProductsPage(): ReactElement {
   const finishDate = new Date('October 22, 2021 03:24:00');
   return (
     <>
       <Head>
-        <title>Forge | Asesorías técnicas</title>
+        <title>Forge | Productos</title>
       </Head>
-      <InDevPage compName="Asesorías técnicas" finishDate={finishDate as unknown as number} />
+      <InDevPage compName="Productos" finishDate={finishDate as unknown as number} />
     </>
   );
 }

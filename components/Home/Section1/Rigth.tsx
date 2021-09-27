@@ -11,7 +11,7 @@ export default function Rigth({ isMovil } : { isMovil: boolean }): ReactElement 
       <div className="image-front">
         <Image
           priority
-          src="/images/home/home-sec1-front.svg" // Route of the image file
+          src="/images/home/sec1-front.webp" // Route of the image file
           height={isMovil ? 437 * 0.7 : 437}
           width={isMovil ? 413 * 0.7 : 413}
           alt={genericAlt}
@@ -19,7 +19,7 @@ export default function Rigth({ isMovil } : { isMovil: boolean }): ReactElement 
       </div>
       <div className="image-back-top">
         <img
-          src="/images/home/home-sec1-top.svg" // Route of the image file
+          src="/images/home/sec1-top.webp" // Route of the image file
           height={isMovil ? 382 * 0.7 : 382}
           width={isMovil ? 405 * 0.7 : 405}
           alt={genericAlt}
@@ -27,7 +27,7 @@ export default function Rigth({ isMovil } : { isMovil: boolean }): ReactElement 
       </div>
       <div className="image-back-bottom">
         <img
-          src="/images/home/home-sec1-bottom.svg" // Route of the image file
+          src="/images/home/sec1-bottom.svg" // Route of the image file
           height={isMovil ? 190 * 0.6 : 190}
           width={isMovil ? 325 * 0.6 : 325}
           alt={genericAlt}

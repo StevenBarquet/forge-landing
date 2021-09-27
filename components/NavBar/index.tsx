@@ -5,7 +5,6 @@ import Link from 'CComps/Link';
 import { Row, Col } from 'antd';
 // ---Components
 import NavButton from 'Comp/NavBar/NavbarItems/NavButton';
-import NavDropdown from 'Comp/NavBar/NavbarItems/NavDropdown';
 // ---Others
 // import { appConfig } from 'Others/global-config';
 // style={{ backgroundColor: 'greenyellow' }}
@@ -29,24 +28,16 @@ function JustButtons(props: { currentPath: string }) {
     xl: { offset: 4, span: 4 },
     xxl: { offset: 4, span: 4 }
   };
-  const creaPaths = [
-    {
-      label: 'E-Comerce',
-      value: '/EcomercePage'
-    },
-    {
-      label: 'Página Web',
-      value: '/SimpleWebPage'
-    }
-  ];
   return (
     <Row>
-      <NavDropdown label="Crea" paths={creaPaths} currentPath={currentPath} grid={navGrid} />
+      <NavButton path="/" currentPath={currentPath} grid={navGrid}>
+        Inicio
+      </NavButton>
+      <NavButton path="/ProductsPage" currentPath={currentPath} grid={navGrid}>
+        Productos
+      </NavButton>
       <NavButton path="/ServicesPage" currentPath={currentPath} grid={navGrid}>
         Servicios
-      </NavButton>
-      <NavButton path="/ConsultoryPage" currentPath={currentPath} grid={navGrid}>
-        Asesorías técnicas
       </NavButton>
       <NavButton path="/LoginPage" currentPath={currentPath} grid={logInGrid}>
         <>
