@@ -33,7 +33,7 @@ export default function CarouselSuccess(): React.ReactElement {
         draggable={false}
         showDots
         responsive={responsive}
-        ssr={false} // means to render carousel on server-side.
+        ssr // means to render carousel on server-side.
         infinite
         autoPlaySpeed={1000}
         keyBoardControl
