@@ -41,7 +41,7 @@ export default function LoginText(): ReactElement {
         Estatus: Favorable
         <br />
         Descargar.
-        <DownloadOutlined />
+        <DownloadOutlined style={{fontSize:'30px'}}/>
       </Content>
     </Layout>
   );
