@@ -13,7 +13,7 @@ import LoginText from 'Comp/Login/LoginText';
 
 const { Meta } = Card;
 const { Content, Sider } = Layout;
-
+const { SubMenu } = Menu;
 // --------------------------------------PROPS-----------------------
 // --------------------------------------COMPONENTE-----------------------
 export default function Login(): ReactElement {
@@ -31,7 +31,7 @@ export default function Login(): ReactElement {
         }}
       >
         <div className="logo" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['5']}>
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
           <Card>
             <Meta
               avatar={(
@@ -51,27 +51,30 @@ export default function Login(): ReactElement {
               description="Usuario"
             />
           </Card>
-          <Menu.Item key="1" icon={<ApiOutlined />}>
-            PROYECTOS
-            {/* Cantidad de proyectos: 4
-              <br />
-              Pago Mensual por proyecto:$1,250
-              <br />
-              Pago Mensual Total: $5,000
-              <br />
-              Pago anual Total: $60,000
-              <br /> */}
-          </Menu.Item>
-          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+          <SubMenu key="sub1" title="PROYECTOS" icon={<ApiOutlined />}>
+            <Menu.ItemGroup key="g1" title="Cantidad de proyectos:">
+              <Menu.Item>4</Menu.Item>
+            </Menu.ItemGroup>
+            <Menu.ItemGroup key="g2" title="Pago Mensual por proyecto:">
+              <Menu.Item>$1,250</Menu.Item>
+            </Menu.ItemGroup>
+            <Menu.ItemGroup key="g3" title="Pago Mensual Total:">
+              <Menu.Item>$5,000</Menu.Item>
+            </Menu.ItemGroup>
+            <Menu.ItemGroup key="g4" title="Pago anual Total:">
+              <Menu.Item>$60,000</Menu.Item>
+            </Menu.ItemGroup>
+          </SubMenu>
+          <Menu.Item key="1" icon={<VideoCameraOutlined />}>
             STEVEDEBOTS
           </Menu.Item>
-          <Menu.Item key="3" icon={<AppstoreAddOutlined />}>
+          <Menu.Item key="2" icon={<AppstoreAddOutlined />}>
             SHELLY
           </Menu.Item>
-          <Menu.Item key="4" icon={<AppstoreAddOutlined />}>
+          <Menu.Item key="3" icon={<AppstoreAddOutlined />}>
             FORGE
           </Menu.Item>
-          <Menu.Item key="5" icon={<AppstoreAddOutlined />}>
+          <Menu.Item key="4" icon={<AppstoreAddOutlined />}>
             SPACE
           </Menu.Item>
         </Menu>

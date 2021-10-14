@@ -1,19 +1,13 @@
-// ---Dependencys
 import { ReactElement } from 'react';
 import { Layout, Button } from 'antd';
 import CountDown from 'CComps/InDevPage/CountDown';
 import {
   DownloadOutlined
 } from '@ant-design/icons';
-// ---Redux
-import { useSelector } from 'react-redux';
-import { ReduxState } from 'Reducers';
 
-const finishDate = new Date('October 9, 2021 03:24:00') as unknown as number;
+const finishDate = new Date('October 9, 2021 03:24:00');
 const { Header, Content } = Layout;
 export default function LoginText(): ReactElement {
-  // Redux States
-  const { isMovil } = useSelector((reducers: ReduxState) => reducers.appInfoReducer);
   return (
     <Layout>
       <Header>
@@ -28,7 +22,7 @@ export default function LoginText(): ReactElement {
         Tú saldo abonado actualmente.
         <br />
         Tiempo de cobertura en el servicio:
-        <CountDown isMovil={isMovil} finishDate={finishDate} />
+        <CountDown finishDate={finishDate} />
         <br />
         Sú sitio sera borrado en caso de no contar con el pago de cobertura.
         <br />
