@@ -22,7 +22,7 @@ export default function LoginText(): ReactElement {
         Tú saldo abonado actualmente.
         <br />
         Tiempo de cobertura en el servicio:
-        <CountDown finishDate={finishDate as unknown as number} />
+        <CountDown finishDate={finishDate as unknown as number} isMovil={false} />
         <br />
         Sú sitio sera borrado en caso de no contar con el pago de cobertura.
         <br />

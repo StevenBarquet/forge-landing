@@ -3,8 +3,10 @@ import { ReactElement } from 'react';
 import {
   Layout
 } from 'antd';
-import SaldoContent from 'Comp/Saldo/SaldoContent';
 // ---Component
+import SaldoContent from 'Comp/Saldo/SaldoContent';
+import SaldoSider from 'Comp/Saldo/SaldoSider';
+
 const {
   Footer, Content, Sider
 } = Layout;
@@ -13,7 +15,19 @@ const {
 export default function SaldoMain(): ReactElement {
   return (
     <Layout>
-      <Sider>Sider</Sider>
+      <Sider
+        breakpoint="lg"
+        collapsedWidth="0"
+        width="261"
+        onBreakpoint={(broken) => {
+          console.log(broken);
+        }}
+        onCollapse={(collapsed, type) => {
+          console.log(collapsed, type);
+        }}
+      >
+        <SaldoSider />
+      </Sider>
       <Layout>
         <Content><SaldoContent /></Content>
         <Footer>Footer</Footer>

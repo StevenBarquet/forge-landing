@@ -1,35 +1,35 @@
 // ---Dependencys
 import { ReactElement } from 'react';
 import {
-  Row, Col, Button, Badge
+  Row, Col, Divider
 } from 'antd';
 import CountDown from 'CComps/InDevPage/CountDown';
 import { DownloadOutlined } from '@ant-design/icons';
-
-const finishDate = new Date('October 9, 2021 03:24:00');
 // --------------------------------------PROPS-----------------------
 // --------------------------------------COMPONENTE-----------------------
+import SaldoBoton from 'Comp/Saldo/SaldoBoton';
+
+const finishDate = new Date('October 9, 2021 03:24:00');
+
 export default function SaldoContent(): ReactElement {
   return (
     <Row justify="center">
-      <Col className="LayoutText" xs={24} sm={24} md={24} lg={14} xl={14} xxl={14}>
+      <Col className="SaldoLayoutText" xs={24} sm={24} md={24} lg={14} xl={14} xxl={14}>
+        <SaldoBoton />
         <p>
-          <Badge status="success" />
-          Formas de pago
-          <Button type="default" icon={<DownloadOutlined />}>Ticket de Pago</Button>
-          <br />
-          SALDO
-          <br />
-          $10,000.00 MX
-          <br />
-          Tú saldo abonado actualmente.
+          <h1>SALDO</h1>
+          <h2>$10,000.00 MX</h2>
+          <Divider />
+          <h3>Tú saldo abonado actualmente.</h3>
           <br />
           Tiempo de cobertura en el servicio:
-          <CountDown finishDate={finishDate as unknown as number} />
+          <CountDown className="ContadorLayoutText" finishDate={finishDate as unknown as number} isMovil={false} />
           <br />
-          <span>Sú sitio sera borrado en caso de no contar con el pago de cobertura.</span>
-          <br />
-          <span>Fecha limite de pago: 30/01/2022</span>
+          <span>
+            Sú sitio sera borrado en caso de no contar con el pago de cobertura.
+            <br />
+            Fecha limite de pago: 30/01/2022
+          </span>
           <br />
           Adeudo anual: $50,000 MX
           <br />
