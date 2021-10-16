@@ -22,7 +22,7 @@ export default function SaldoContent(): ReactElement {
           <Divider />
           <h3>Tú saldo abonado actualmente.</h3>
           <h4>Tiempo de cobertura en el servicio:</h4>
-          <CountDown className="ContadorLayoutText" finishDate={finishDate as unknown as number} isMovil={false} />
+          <CountDown finishDate={finishDate as unknown as number} isMovil={false} />
           <br />
           <span>
             Sú sitio sera borrado en caso de no contar con el pago de cobertura.

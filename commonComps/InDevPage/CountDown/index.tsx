@@ -10,15 +10,18 @@ import DateBox from 'CComps/InDevPage/CountDown/DateBox';
 interface Props {
   finishDate: number;
   isMovil: boolean;
+  className?: string;
 }
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function CountDown({ finishDate, isMovil }: Props) : React.ReactElement {
+export default function CountDown({ finishDate, isMovil, className }: Props) : React.ReactElement {
+  // ------------------------ Const, Hooks, States --------------------------
   const [count, setCount] = useState({
     days: 0,
     hours: 0,
     mins: 0,
     secs: 0
   });
+  const style = className || 'date-box';
   useEffect(() => {
     const intervalId = setInterval(() => { // assign interval to a variable to clear it.
       updateCountDown();
@@ -76,7 +79,7 @@ export default function CountDown({ finishDate, isMovil }: Props) : React.ReactE
   };
   // ------------------------RENDER------------------
   return (
-    <Row className={isMovil ? 'date-box-movil' : 'date-box'} justify="center">
+    <Row className={isMovil ? `${style}-movil` : style} justify="center">
       <Col {...grid}>
         <DateBox label="DÍAS" value={count.days} />
       </Col>
