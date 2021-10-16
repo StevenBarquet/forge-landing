@@ -1,7 +1,7 @@
 //----------------------------------------------Nav-----------------------------------------------
 .nav-div {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   background-color: @colorNavBar;
 }
 .to-home {
@@ -65,7 +65,7 @@ footer{
   min-height: 70px;
   background-color: @colorNavBar;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 10px;
   h1 {
     color: @colorThreeTextLigther;
     font-size: 28px;
@@ -183,7 +183,7 @@ footer{
       180deg,
       #204a57 16.63%,
       #01ade3e4 97.92%,
-      rgba(0, 175, 231, 0.89) 100%
+      rgba(134, 198, 219, 0.89) 100%
     );
     padding: 22px;
     height: 343px;
@@ -218,7 +218,7 @@ footer{
     }
   }
   .section-2-2 {
-    background-color: #272626;
+    background-color: @colorPrimaryDark;
     margin-top: 25px;
     padding-bottom: 30px;
     height: 343px;
@@ -276,14 +276,14 @@ footer{
       display: inline;
     }
     .ant-btn {
-      background-color: #158f20;
+      background-color: @simpleColorGreen;
       font-weight: bold;
       border-radius: 15px;
       border-color: #bcf5c1;
     }
     .ant-btn-primary:hover,
     .ant-btn-primary:focus {
-      border-color: #158f20;
+      border-color: @simpleColorGreen;
     }
   }
   .section-3-2 {
@@ -355,7 +355,7 @@ footer{
 /*----------------------------------------Login-------------------------------------*/
 
 .LayoutText {
-  color: #272626;
+  color: @colorPrimaryDark;
   text-align: center;
 }
 .ant-card-body {
@@ -364,11 +364,10 @@ footer{
     color: @colorWhite;
   }
 }
-/*----------------------------------------Saldo-------------------------------------*/
+/*----------------------------------------SaldoSider-------------------------------------*/
 
 .ant-layout-sider-children{
-background: rgba(31, 31, 31, 1);
-
+background:@colorPrimaryDark;
 }
 .ContadorLayoutText {
   color: @colorWhite;
@@ -382,43 +381,50 @@ background: rgba(31, 31, 31, 1);
   color: @colorWhite;
   font-size: 10px;
 }
-/*----------------------------------------Saldo info-------------------------------------*/
-
+/*----------------------------------------SaldoContent-------------------------------------*/
+.ant-layout {
+background-color: transparent;
+}
+.ant-layout-footer
+{
+  background-color: transparent;
+}
 .SaldoLayoutText {
-color: rgba(0, 0, 0, 1);
+color: @colorPrimaryDark;
 text-align: center;
-p{
   font-size: 15px;
     h1{
     font-size: 64px;
     font-weight: bold;
-    color: rgba(0, 0, 0, 1);
+    color: @colorPrimaryDark;
   }
   h2{
     font-weight: bold;
     font-size: 40px;
-    color: rgba(0, 0, 0, 1);
+    color: @colorPrimaryDark;
   }
   h3{
     font-size: 12px;
-    color: rgba(0, 0, 0, 1);
+    color: @colorPrimaryDark;
   }
   h4{
     font-size: 15px;
-    color: rgba(0, 0, 0, 1);
+    color: @colorPrimaryDark;
   }
   span{
     font-size: 15px;
   }
 }
-}
 
+.ContenedorBotoncitos .ant-btn.ant-btn-primary{
+background-color: @colorSecondary;
+}
 .FormatoDePago{
   font-size: 30px;
 }
 
 .SaldoFooter{
-  color: rgba(0, 0, 0, 1);
+  color: @colorPrimaryDark;
 }
 /*----------------------------------------Services-------------------------------------*/
 .Servicios-container {
@@ -427,7 +433,8 @@ p{
   font-style: normal;
 }
 .Services-section-1 {  
- background-color: #272626;
+ background-color: @colorPrimaryDark;
+ padding: 25px;
  height: 394px;
  left: 144px;
  top: 302px;
@@ -445,6 +452,7 @@ p{
 .Services-section-2{
   height: 394px;
   font-size: 24px;
+  padding: 15px;
   p{
     font-size: 32px;
     font-weight: bold;
@@ -453,7 +461,7 @@ p{
 }
 
 .Servicesimg-section-1{
-  background-color: #272626;
+  background-color:@colorPrimaryDark;
   height: 394px;
   max-height: 394px;
 }
@@ -461,6 +469,7 @@ p{
 .Servicesimg-section-2{
   height: 394px;
   max-height: 394px;
+  padding-left: 50px;
 }
 
 .imagen1 {
@@ -482,4 +491,185 @@ p{
   width: 420px;
   height: 304px;
   margin: 30px;
+}
+
+/*----------------------------------------ServicesCard-------------------------------------*/
+.Seccion_3 {
+  display: grid; /*DEFINIMOS LA GRID*/
+  grid-template-columns: repeat(
+    3,
+    1fr
+    ); /*INDICAMOS CUANTAS SECCIONES TENDRA LA GRID*/
+    list-style: none;
+    color: @colorWhite;
+    justify-items: center;
+    
+    .Seccion_3_item_1 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item1.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .Seccion_3_item_2 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item2.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_3 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item3.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_4 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item4.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_5 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item5.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_6 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item6.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_7 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item7.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_8 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item8.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_9 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item9.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_10 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item10.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .Seccion_3_item_11 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item11.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .Seccion_3_item_12 {
+      height: 200px;
+      width: 316.73px;
+      margin: 15px;
+      padding-top: 15%;
+      border-radius: 20px;
+      background-image: url(/images/Services/img/item12.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .Seccion_3_item_text {
+      background: rgba(0, 0, 0, 0.71);
+      height: 92px;
+      display: block;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+    }
+}
+
+.ContenBotonServices .ant-btn.ant-btn-link {
+  background-color: @simpleColorGreen;
+  border-radius: 15px;
+  color:@colorWhite;
+}
+.ContenBotonServices {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+/*------responcivegrid---------------------------*/
+@media all and (max-width: 1100px) {
+  .Seccion_3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .Seccion_3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
 }

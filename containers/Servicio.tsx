@@ -25,10 +25,8 @@ export default function Servicio(): ReactElement {
         <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
           <Sec2Rigth />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
-          <Sec3 />
-        </Col>
       </Row>
+      <Sec3 />
     </div>
   );
 }

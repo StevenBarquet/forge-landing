@@ -16,7 +16,7 @@ export default function SaldoContent(): ReactElement {
     <Row justify="center">
       <Col className="SaldoLayoutText" xs={24} sm={24} md={24} lg={14} xl={14} xxl={14}>
         <SaldoBoton />
-        <p>
+        <>
           <h1>SALDO</h1>
           <h2>$10,000.00 MX</h2>
           <Divider />
@@ -44,7 +44,7 @@ export default function SaldoContent(): ReactElement {
           <br />
           Descargar.
           <DownloadOutlined style={{ fontSize: '30px' }} />
-        </p>
+        </>
       </Col>
     </Row>
   );

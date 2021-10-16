@@ -14,7 +14,9 @@ export default function SaldoBoton(): ReactElement {
         Formas de pago
       </Col>
       <Col>
-        <Button type="primary" icon={<DownloadOutlined />}>Ticket de Pago</Button>
+        <div className="ContenedorBotoncitos">
+          <Button type="primary" icon={<DownloadOutlined />}>Ticket de Pago</Button>
+        </div>
       </Col>
     </Row>
   );
