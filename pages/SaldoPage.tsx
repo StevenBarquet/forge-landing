@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 // ---Components
-import Saldo from '../containers/Saldo';
+import Saldo from 'Cont/Saldo';
 
 // ------------------------------------------ COMPONENTE ---------------------------------------
 export default function HelpPage(): ReactElement {
