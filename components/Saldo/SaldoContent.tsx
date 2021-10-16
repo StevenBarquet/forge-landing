@@ -21,8 +21,7 @@ export default function SaldoContent(): ReactElement {
           <h2>$10,000.00 MX</h2>
           <Divider />
           <h3>Tú saldo abonado actualmente.</h3>
-          <br />
-          Tiempo de cobertura en el servicio:
+          <h4>Tiempo de cobertura en el servicio:</h4>
           <CountDown className="ContadorLayoutText" finishDate={finishDate as unknown as number} isMovil={false} />
           <br />
           <span>

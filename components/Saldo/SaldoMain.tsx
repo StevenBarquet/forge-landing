@@ -6,6 +6,7 @@ import {
 // ---Component
 import SaldoContent from 'Comp/Saldo/SaldoContent';
 import SaldoSider from 'Comp/Saldo/SaldoSider';
+import SaldoFooter from 'Comp/Saldo/SaldoFooter';
 
 const {
   Footer, Content, Sider
@@ -30,7 +31,9 @@ export default function SaldoMain(): ReactElement {
       </Sider>
       <Layout>
         <Content><SaldoContent /></Content>
-        <Footer>Footer</Footer>
+        <Footer>
+          <SaldoFooter />
+        </Footer>
       </Layout>
     </Layout>
   );
