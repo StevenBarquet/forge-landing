@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 import { Row, Col } from 'antd';
 import { FacebookFilled, WhatsAppOutlined, MailOutlined } from '@ant-design/icons';
 // ---Other
-import { ownerData } from 'Others/global-config';
+import { ownerData } from 'Others/globalConfig';
 // ----------------------------------------COMPONENT----------------------------------------
 export default function ContactUS(): ReactElement {
   return (

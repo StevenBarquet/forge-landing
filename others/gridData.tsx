@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/prefer-default-export
 export const Grid = {
-  menu: [
+  Grids: [
     {
       title: 'TECNOLOGIAS DE DESARROLO'
     },

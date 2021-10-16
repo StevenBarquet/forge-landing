@@ -8,7 +8,7 @@ import {
 // ---CommonComps
 import Link from 'CComps/Link';
 // ---Other
-import { ownerData } from 'Others/global-config';
+import { ownerData } from 'Others/globalConfig';
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Footer(): ReactElement {
   const grid = {

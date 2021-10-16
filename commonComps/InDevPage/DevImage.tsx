@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import { Col } from 'antd';
 // ---Others
-import { ownerData } from 'Others/global-config';
+import { ownerData } from 'Others/globalConfig';
 
 // ----------------------------------------COMPONENT----------------------------------
 export default function DevImage(): ReactElement {

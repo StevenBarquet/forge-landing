@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import { Col } from 'antd';
 // ---Others
-import { ownerData } from 'Others/global-config';
+import { ownerData } from 'Others/globalConfig';
 // -----------------------------------------TYPES-----------------------------------
 interface Props {
   compName: string;
