@@ -435,7 +435,6 @@ background:@colorPrimaryDark;
 /*----------------------------------------Services-------------------------------------*/
 .services-container {
   padding: 10px;
-  font-family: Roboto;
   font-style: normal;
   .services-section-1 {  
    background-color: @colorPrimaryDark;
@@ -497,7 +496,33 @@ background:@colorPrimaryDark;
     height: 304px;
     margin: 30px;
   }
-  /*----------------------------------------ServicesCard-------------------------------------*/
+  /*-------ServicesCard----------*/
+  .card{
+    height: 200px;
+    width: 316.73px;
+    margin: 0px auto 0px auto;
+    h3{
+      // Box modeling
+      height: 75px;
+      width: 316.73px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // Content
+      background: @colorTransparentDark;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      // Position
+      position: absolute;
+      top: 55px
+    }
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  // ----Mau abajo
   .seccion-3 {
     display: grid; /*DEFINIMOS LA GRID*/
     grid-template-columns: repeat(3,1fr); /*INDICAMOS CUANTAS SECCIONES TENDRA LA GRID*/
@@ -635,16 +660,16 @@ background:@colorPrimaryDark;
         text-align: center;
         padding: 20px;
       }
-      .content-boton-services .ant-btn.ant-btn-link {
-        background-color: @simpleColorGreen;
-        border-radius: 15px;
-        color:@colorWhite;
-      }
-      .content-boton-services {
-        display: flex;
-        justify-content: center;
-        margin: 15px;
-      }
+  }
+  .content-boton-services .ant-btn.ant-btn-link {
+    background-color: @simpleColorGreen;
+    border-radius: 15px;
+    color:@colorWhite;
+  }
+  .content-boton-services {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
   }
   /*------responcivegrid---------------------------*/
   @media all and (max-width: 1100px) {
