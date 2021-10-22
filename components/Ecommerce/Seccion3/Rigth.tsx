@@ -6,11 +6,11 @@ import { genericAlt } from 'Others/globalData';
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Rigth(): ReactElement {
   return (
-    <div className="ecomerceimg-section-3">
+    <div className="ecommerceimg-section-3">
       <div className="image-front">
         <img
           className="imagen1"
-          src="/images/Ecomerce/ecom5.jpeg" // Route of the image file
+          src="/images/Ecommerce/ecom5.jpeg" // Route of the image file
           alt={genericAlt}
         />
       </div>

@@ -9,7 +9,7 @@ import {
 export default function SaldoFooter(): ReactElement {
   return (
     <Row justify="end">
-      <Col className="SaldoFooter">
+      <Col className="saldo-footer">
         <img src="/images/footer/Paypal.jpeg" alt="Shelly" width="30%" />
         <img src="/images/footer/Mercadolibre.jpeg" alt="Shelly" width="30%" />
         <br />

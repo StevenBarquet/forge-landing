@@ -9,12 +9,12 @@ import { DownloadOutlined } from '@ant-design/icons';
 export default function SaldoBoton(): ReactElement {
   return (
     <Row justify="space-between">
-      <Col className="FormatoDePago">
+      <Col className="formato-de-pago">
         <Badge status="success" />
         Formas de pago
       </Col>
       <Col>
-        <div className="ContenedorBotoncitos">
+        <div className="contenedor-botoncitos">
           <Button type="primary" icon={<DownloadOutlined />}>Ticket de Pago</Button>
         </div>
       </Col>

@@ -6,9 +6,9 @@ export default function Left(): ReactElement {
   return (
     <Row justify="center">
       <Col>
-        <section className="Ecomerce-section-1">
+        <section className="ecommerce-section-1">
           <h1>
-            E- commerce
+            E-commerce
           </h1>
           <p>
             La mejor opcion para un joven

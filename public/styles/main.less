@@ -353,7 +353,6 @@ footer{
   }
 }
 /*----------------------------------------Login-------------------------------------*/
-
 .LayoutText {
   color: @colorPrimaryDark;
   text-align: center;
@@ -365,35 +364,33 @@ footer{
   }
 }
 /*----------------------------------------SaldoSider-------------------------------------*/
+.saldo-conteiner{
 
-.ant-layout-sider-children{
+  .ant-layout-sider-children{
 background:@colorPrimaryDark;
 }
-.ContadorLayoutText {
-  color: @colorWhite;
-}
 
-.Saldos-subtitulos {
+.saldos-subtitulos {
   background-color: @colorDark;
   font-size: 12px;
 }
-.Saldos-Texto{
+.saldos-texto{
   color: @colorWhite;
   font-size: 10px;
 }
 /*----------------------------------------SaldoContent-------------------------------------*/
 .ant-layout {
-background-color: transparent;
+  background-color: transparent;
 }
 .ant-layout-footer
 {
   background-color: transparent;
 }
-.SaldoLayoutText {
-color: @colorPrimaryDark;
-text-align: center;
+.saldo-layout-text {
+  color: @colorPrimaryDark;
+  text-align: center;
   font-size: 15px;
-    h1{
+  h1{
     font-size: 64px;
     font-weight: bold;
     color: @colorPrimaryDark;
@@ -415,15 +412,14 @@ text-align: center;
     font-size: 15px;
   }
 }
-
-.ContenedorBotoncitos .ant-btn.ant-btn-primary{
-background-color: @colorSecondary;
+.contenedor-botoncitos .ant-btn.ant-btn-primary{
+  background-color: @colorSecondary;
+  border-radius: 15px;
 }
-.FormatoDePago{
+.formato-de-pago{
   font-size: 30px;
 }
-
-.ContadorSaldo{
+.contador-saldo{
   background-color: @colorDark;
   color: @colorWhite;
   width: 110px;
@@ -432,285 +428,271 @@ background-color: @colorSecondary;
     opacity: 0;
   }
 }
-
-
-.SaldoFooter{
+.saldo-footer{
   color: @colorPrimaryDark;
 }
+}
 /*----------------------------------------Services-------------------------------------*/
-.Servicios-container {
+.services-container {
   padding: 10px;
   font-family: Roboto;
   font-style: normal;
-}
-.Services-section-1 {  
- background-color: @colorPrimaryDark;
- padding: 25px;
- height: 394px;
- left: 144px;
- top: 302px;
- h1{
-  font-size: 48px;
-  font-weight: bold;
-}
- p{
-   padding-left: 80px;
-   color: @colorWhite;
- 
- }
-}
-
-.Services-section-2{
-  height: 394px;
-  font-size: 24px;
-  padding: 15px;
-  p{
-    font-size: 32px;
+  .services-section-1 {  
+   background-color: @colorPrimaryDark;
+   padding: 25px;
+   height: 394px;
+   left: 144px;
+   top: 302px;
+   h1{
+    font-size: 48px;
     font-weight: bold;
-    color: @colorDark;
   }
-}
-
-.Servicesimg-section-1{
-  background-color:@colorPrimaryDark;
-  height: 394px;
-  max-height: 394px;
-}
-
-.Servicesimg-section-2{
-  height: 394px;
-  max-height: 394px;
-  padding-left: 50px;
-}
-
-.imagen1 {
-  position: absolute;
-  width: 344px;
-  height: 302px;
-  left: 40px;
-  top: 15px;
-}
-.imagen2 {
-  position: absolute;
-  width: 332px;
-  height: 306px;
-  left: 244px;
-  top: 61px;
-}
-
-.imagen3 {
-  width: 420px;
-  height: 304px;
-  margin: 30px;
-}
-
-/*----------------------------------------ServicesCard-------------------------------------*/
-.Seccion_3 {
-  display: grid; /*DEFINIMOS LA GRID*/
-  grid-template-columns: repeat(
-    3,
-    1fr
-    ); /*INDICAMOS CUANTAS SECCIONES TENDRA LA GRID*/
+   p{
+     padding-left: 80px;
+     color: @colorWhite;
+   
+   }
+  }
+  
+  .services-section-2{
+    height: 394px;
+    font-size: 24px;
+    padding: 15px;
+    p{
+      font-size: 32px;
+      font-weight: bold;
+      color: @colorDark;
+    }
+  }
+  
+  .servicesimg-section-1{
+    background-color:@colorPrimaryDark;
+    height: 394px;
+    max-height: 394px;
+  }
+  
+  .servicesimg-section-2{
+    height: 394px;
+    max-height: 394px;
+    padding-left: 50px;
+  }
+  
+  .imagen1 {
+    position: absolute;
+    width: 344px;
+    height: 302px;
+    left: 40px;
+    top: 15px;
+  }
+  .imagen2 {
+    position: absolute;
+    width: 332px;
+    height: 306px;
+    left: 244px;
+    top: 61px;
+  }
+  
+  .imagen3 {
+    width: 420px;
+    height: 304px;
+    margin: 30px;
+  }
+  /*----------------------------------------ServicesCard-------------------------------------*/
+  .seccion-3 {
+    display: grid; /*DEFINIMOS LA GRID*/
+    grid-template-columns: repeat(3,1fr); /*INDICAMOS CUANTAS SECCIONES TENDRA LA GRID*/
     list-style: none;
     color: @colorWhite;
     justify-items: center;
-    
-    .Seccion_3_item_1 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item1.jpeg);
-      background-position: center;
-      background-size: cover;
+      .seccion-3-1 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item1.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-2 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item2.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-3 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item3.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-4 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item4.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-5 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item5.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-6 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item6.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-7 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item7.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-8 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item8.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-9 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item9.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-10 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item10.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-11 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item11.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-12 {
+        height: 200px;
+        width: 316.73px;
+        margin: 15px;
+        padding-top: 15%;
+        border-radius: 20px;
+        background-image: url(/images/Services/img/item12.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      .seccion-3-item-text {
+        background: rgba(0, 0, 0, 0.71);
+        height: 92px;
+        display: block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        padding: 20px;
+      }
+      .content-boton-services .ant-btn.ant-btn-link {
+        background-color: @simpleColorGreen;
+        border-radius: 15px;
+        color:@colorWhite;
+      }
+      .content-boton-services {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+      }
+  }
+  /*------responcivegrid---------------------------*/
+  @media all and (max-width: 1100px) {
+    .seccion-3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
     }
-    .Seccion_3_item_2 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item2.jpeg);
-      background-position: center;
-      background-size: cover;
+  }
+  
+  @media all and (max-width: 750px) {
+    .seccion-3 {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
     }
-    
-    .Seccion_3_item_3 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item3.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_4 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item4.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_5 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item5.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_6 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item6.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_7 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item7.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_8 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item8.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_9 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item9.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_10 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item10.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    .Seccion_3_item_11 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item11.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    .Seccion_3_item_12 {
-      height: 200px;
-      width: 316.73px;
-      margin: 15px;
-      padding-top: 15%;
-      border-radius: 20px;
-      background-image: url(/images/Services/img/item12.jpeg);
-      background-position: center;
-      background-size: cover;
-    }
-    
-    .Seccion_3_item_text {
-      background: rgba(0, 0, 0, 0.71);
-      height: 92px;
-      display: block;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      text-align: center;
-      padding: 20px;
-    }
-}
-
-.ContenBotonServices .ant-btn.ant-btn-link {
-  background-color: @simpleColorGreen;
-  border-radius: 15px;
-  color:@colorWhite;
-}
-.ContenBotonServices {
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-}
-
-/*------responcivegrid---------------------------*/
-@media all and (max-width: 1100px) {
-  .Seccion_3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
   }
 }
-
-@media all and (max-width: 750px) {
-  .Seccion_3 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-  }
-}
-
-
-
-.Ecomerce-section-1 {
-  height: 484px;
-  width: 1365px;
+/*----------------------------------------ecommerce-------------------------------------*/
+.ecommerce-container{
   font-family: Roboto;
-  background-image: url(/images/Ecomerce/ecom1.jpeg);
+
+.ecommerce-section-1 {
+  height: 484px;
+  width: 100%;
+  background-image: url(/images/Ecommerce/ecom1.jpeg);
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 150px;
       h1{
+        width: auto;
+        margin: auto 400px auto 400px;
         font-size: 72px;
         font-weight: bold;
-        margin:  auto 400px auto 400px;
+        min-width: 417px;
         border: solid @colorWhite 2px;
       }
       p{
-        padding-top: 50px;
+        width: 100%;
+        padding-top: 40px;
         color: @colorWhite;
         font-weight: bold;
         font-size: 18px;
       }
 }
 
-.Ecomerce-section-2{
+.ecommerce-section-2{
  padding: 25px;
  height: 621px;
  left: 144px;
@@ -728,7 +710,7 @@ background-color: @colorSecondary;
  }
 }
 
-.Ecomerceimg-section-2{
+.ecommerceimg-section-2{
   height: 621px;
   max-height: 621px;
   margin-bottom: 20px;
@@ -753,7 +735,80 @@ background-color: @colorSecondary;
     }
 }
 
-.Ecomerce-section-3{
+.section-2-1 {
+  margin-top: 25px;
+  background: linear-gradient(
+    180deg,
+    #204a57 16.63%,
+    #01ade3e4 97.92%,
+    rgba(134, 198, 219, 0.89) 100%
+  );
+  padding: 22px;
+  height: 343px;
+  h2 {
+    color: @colorFive;
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+  h1 {
+    color: @colorWhite;
+    font-size: 36px;
+    text-align: center;
+  }
+  .contact-sticker {
+    section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    p {
+      color: @colorWhite;
+      font-size: 16px;
+      text-align: center;
+    }
+    svg {
+      font-size: 38px;
+      margin: 0px auto 0px auto;
+      display: block;
+    }
+  }
+}
+.section-2-2 {
+  background-color: @colorPrimaryDark;
+  margin-top: 25px;
+  padding-bottom: 30px;
+  height: 343px;
+  .image-back img {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    z-index: 0;
+  }
+  h1 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 115%;
+    width: 75%;
+    margin: 0px 0px 0px 20px;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  p {
+    color: @colorWhite;
+    display: block;
+    width: 75%;
+    margin: 40px 0px 0px 20px;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.ecommerce-section-3{
   padding: 25px;
   height: 621px;
   left: 144px;
@@ -773,7 +828,7 @@ background-color: @colorSecondary;
   }
  }
 
-.ecomerceimg-section-3{
+.ecommerceimg-section-3{
   height: 621px; 
  .imagen1{
    position: absolute;
@@ -782,12 +837,13 @@ background-color: @colorSecondary;
  }
 }
 
-.ecomerce-seccion4{
-  background-image: url("/images/Ecomerce/ecom6.jpeg");
-  width: 1366px;
+.ecommerce-seccion4{
+  background-image: url("/images/Ecommerce/ecom6.jpeg");
+  width: auto;
   height: 650px;
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 120px;
+}
 }

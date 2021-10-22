@@ -27,7 +27,7 @@ export default function CarouselSuccess(): React.ReactElement {
     }
   };
   return (
-    <div className="ecomerce-seccion4">
+    <div className="ecommerce-seccion4">
       <h1>CONOCE ALGUNOS DE NUESTROS PROYECTOS</h1>
       <br />
       <Carousel
@@ -46,43 +46,43 @@ export default function CarouselSuccess(): React.ReactElement {
       >
         <Image
           priority
-          src="/images/Ecomerce/ecom7.jpeg" // Route of the image file
-          height={306 * 0.8}
+          src="/images/Ecommerce/ecom7.jpeg" // Route of the image file
+          height={406 * 0.8}
           width={241 * 0.8}
           alt={genericAlt}
         />
         <Image
           priority
-          src="/images/Ecomerce/ecom8.jpeg" // Route of the image file
-          height={306 * 0.8}
+          src="/images/Ecommerce/ecom8.jpeg" // Route of the image file
+          height={406 * 0.8}
           width={241 * 0.8}
           alt={genericAlt}
         />
         <Image
           priority
-          src="/images/Ecomerce/ecom7.jpeg" // Route of the image file
-          height={306 * 0.8}
+          src="/images/Ecommerce/ecom7.jpeg" // Route of the image file
+          height={406 * 0.8}
           width={241 * 0.8}
           alt={genericAlt}
         />
         <Image
           priority
-          src="/images/Ecomerce/ecom8.jpeg" // Route of the image file
-          height={306 * 0.8}
+          src="/images/Ecommerce/ecom8.jpeg" // Route of the image file
+          height={406 * 0.8}
           width={241 * 0.8}
           alt={genericAlt}
         />
         <Image
           priority
-          src="/images/Ecomerce/ecom7.jpeg" // Route of the image file
-          height={306 * 0.8}
+          src="/images/Ecommerce/ecom7.jpeg" // Route of the image file
+          height={406 * 0.8}
           width={241 * 0.8}
           alt={genericAlt}
         />
         <Image
           priority
-          src="/images/Ecomerce/ecom8.jpeg" // Route of the image file
-          height={306 * 0.8}
+          src="/images/Ecommerce/ecom8.jpeg" // Route of the image file
+          height={406 * 0.8}
           width={241 * 0.8}
           alt={genericAlt}
         />

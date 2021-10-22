@@ -14,7 +14,7 @@ const finishDate = new Date('October 9, 2021 03:24:00');
 export default function SaldoContent(): ReactElement {
   return (
     <Row justify="center">
-      <Col className="SaldoLayoutText" xs={24} sm={24} md={24} lg={14} xl={14} xxl={14}>
+      <Col className="saldo-layout-text" xs={24} sm={24} md={24} lg={14} xl={14} xxl={14}>
         <SaldoBoton />
         <>
           <h1>SALDO</h1>
@@ -23,7 +23,7 @@ export default function SaldoContent(): ReactElement {
           <h3>Tú saldo abonado actualmente.</h3>
           <h4>
             Tiempo de cobertura en el servicio:
-            <CountDown className="ContadorSaldo" finishDate={finishDate as unknown as number} isMovil={false} />
+            <CountDown className="contador-saldo" finishDate={finishDate as unknown as number} isMovil={false} />
           </h4>
           <br />
           <span>

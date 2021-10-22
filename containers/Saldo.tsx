@@ -15,7 +15,7 @@ const {
 // --------------------------------------COMPONENTE-----------------------
 export default function SaldoMain(): ReactElement {
   return (
-    <Layout>
+    <Layout className="saldo-conteiner">
       <Sider
         breakpoint="lg"
         collapsedWidth="0"

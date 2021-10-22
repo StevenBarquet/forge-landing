@@ -2,19 +2,19 @@
 import { ReactElement } from 'react';
 import { Row, Col } from 'antd';
 // ---Components
-import Sec1 from 'Comp/Ecomerce/Seccion1/Left';
-import Sec2Left from 'Comp/Ecomerce/Seccion2/Left';
-import Sec2Rigth from 'Comp/Ecomerce/Seccion2/Rigth';
-import Sec3Left from 'Comp/Ecomerce/Seccion3/Left';
-import Sec3Rigth from 'Comp/Ecomerce/Seccion3/Rigth';
+import Sec1 from 'Comp/Ecommerce/Seccion1/Left';
+import Sec2Left from 'Comp/Ecommerce/Seccion2/Left';
+import Sec2Rigth from 'Comp/Ecommerce/Seccion2/Rigth';
+import Sec3Left from 'Comp/Ecommerce/Seccion3/Left';
+import Sec3Rigth from 'Comp/Ecommerce/Seccion3/Rigth';
 import Sec4Left from 'Comp/Home/Section2/Left';
 import Sec4Rigth from 'Comp/Home/Section2/Rigth';
-import Sec5 from 'Comp/Ecomerce/Seccion4/index';
+import Sec5 from 'Comp/Ecommerce/Seccion4/index';
 
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Ecomerce(): ReactElement {
   return (
-    <div className="Ecomerce-container">
+    <div className="ecommerce-container">
       <Row justify="space-around" align="middle">
         <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={24}>
           <Sec1 />

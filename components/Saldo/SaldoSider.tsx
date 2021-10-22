@@ -19,8 +19,8 @@ export default function SaldoSider(): ReactElement {
           src={<Image src="https://images3.alphacoders.com/112/1126231.png" />}
         />
         <h1>STEVEN BARQUET MENDEZ.</h1>
-        <h2 className="Saldos-subtitulos">PROYECTOS</h2>
-        <p className="Saldos-Texto">
+        <h2 className="saldos-subtitulos">PROYECTOS</h2>
+        <p className="saldos-texto">
           Cantidad de proyectos: 4
           Pago Mensual por proyecto:$1,250
           Pago Mensual Total: $5,000
@@ -32,8 +32,8 @@ export default function SaldoSider(): ReactElement {
           FORGE
           SPACE
         </h1>
-        <h2 className="Saldos-subtitulos">COMPROBANTES.</h2>
-        <h2 className="Saldos-subtitulos">AYUDA.</h2>
+        <h2 className="saldos-subtitulos">COMPROBANTES.</h2>
+        <h2 className="saldos-subtitulos">AYUDA.</h2>
       </Col>
     </Row>
   );

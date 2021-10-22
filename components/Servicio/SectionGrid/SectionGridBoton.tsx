@@ -5,7 +5,7 @@ import { Button } from 'antd';
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Botoncitos(): ReactElement {
   return (
-    <div className="ContenBotonServices">
+    <div className="content-boton-services">
       <Button type="link">CONTRATAR</Button>
     </div>
   );
