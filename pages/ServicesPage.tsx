@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 // ---Components
-import Servicio from 'Cont/Services';
+import Services from 'Cont/Services';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
 export default function ServicesPage(): ReactElement {
@@ -11,7 +11,7 @@ export default function ServicesPage(): ReactElement {
       <Head>
         <title>Forge | Servicios</title>
       </Head>
-      <Servicio />
+      <Services />
     </>
   );
 }
