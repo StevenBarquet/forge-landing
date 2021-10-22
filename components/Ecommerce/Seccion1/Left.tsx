@@ -6,7 +6,7 @@ export default function Left(): ReactElement {
   return (
     <Row justify="center">
       <Col>
-        <section className="ecommerce-section-1">
+        <section className="section-1">
           <h1>
             E-commerce
           </h1>

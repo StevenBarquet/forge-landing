@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 // ---Components
-import Servicio from 'Cont/Servicio';
+import Servicio from 'Cont/Services';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
 export default function ServicesPage(): ReactElement {

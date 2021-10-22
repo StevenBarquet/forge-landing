@@ -6,7 +6,7 @@ export default function Left(): ReactElement {
   return (
     <Row>
       <Col>
-        <section className="ecommerce-section-3">
+        <section className="section-3">
           <h1>
             ¿Por que tener un E- comerce?
           </h1>

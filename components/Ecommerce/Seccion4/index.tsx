@@ -27,7 +27,7 @@ export default function CarouselSuccess(): React.ReactElement {
     }
   };
   return (
-    <div className="ecommerce-seccion4">
+    <div className="seccion-4">
       <h1>CONOCE ALGUNOS DE NUESTROS PROYECTOS</h1>
       <br />
       <Carousel

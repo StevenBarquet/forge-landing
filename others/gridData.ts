@@ -2,50 +2,50 @@
 export const services = [
   {
     label: 'TECNOLOGIAS DE DESARROLO',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item1.jpeg'
   },
   {
     label: 'DISEÑO WEB',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item2.jpeg'
   },
   {
     label: 'DESARROLLO DE SOFTWARE',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item3.jpeg'
   },
   {
     label: 'BACKEND',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item4.jpeg'
   },
   {
     label: 'FRONTEND',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item5.jpeg'
   },
   {
     label: 'INFRAESTRUCTURA',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item6.jpeg'
   },
   {
     label: 'QA (aseguramiento de calidad)',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item7.jpeg'
   },
   {
     label: 'DEVOPS',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item8.jpeg'
   },
   {
     label: 'TESTING',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item9.jpeg'
   },
   {
     label: 'AUTOMATED TESTING',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item10.jpeg'
   },
   {
     label: 'METODOLOGIAS AGILES',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item11.jpeg'
   },
   {
     label: 'SERVICIOS ESPECIALIZADOS',
-    urlImg: ''
+    urlImg: 'imgRoute="/images/Services/img/item12.jpeg'
   }
 ];

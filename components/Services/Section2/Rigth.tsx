@@ -6,7 +6,7 @@ export default function Left(): ReactElement {
   return (
     <Row>
       <Col>
-        <section className="services-section-2">
+        <section className="section-2">
           <p>
             Si tienes alguna duda o problema  con el desarrollo de tu pagina
             o simplemente quisieras saber más del tema.

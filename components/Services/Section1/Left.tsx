@@ -6,7 +6,7 @@ export default function Left(): ReactElement {
   return (
     <Row>
       <Col>
-        <section className="services-section-1">
+        <section className="section-1">
           <h1>
             ¿NECESITAS AYUDA TECNICA?
           </h1>

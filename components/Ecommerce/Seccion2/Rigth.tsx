@@ -6,7 +6,7 @@ import { genericAlt } from 'Others/globalData';
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Rigth(): ReactElement {
   return (
-    <div className="ecommerceimg-section-2">
+    <div className="img-section-2">
       <div>
         <img
           className="imagen1"

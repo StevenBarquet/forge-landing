@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import { Col, ColProps } from 'antd';
 // ---Comps
-import SectionGridBoton from 'Comp/Servicio/SectionGrid/SectionGridBoton';
+import SectionGridBoton from 'Comp/Services/SectionGrid/SectionGridBoton';
 // ---Others
 import { genericAlt } from 'Others/globalData';
 
@@ -13,7 +13,7 @@ interface Props{
   grid: ColProps
 }
 // ----------------------------------------COMPONENT--------------------------------------
-export default function CardSteven(props: Props): ReactElement {
+export default function Cards(props: Props): ReactElement {
   const { imgRoute, label, grid } = props;
   return (
     <Col {...grid}>
