@@ -21,7 +21,7 @@ export default function Cards(props: Props): ReactElement {
         <img src={imgRoute} alt={genericAlt} />
         <h3>{label}</h3>
       </div>
-      <SectionGridBoton />
+      <SectionGridBoton namebutton="CONTRATAR" />
     </Col>
   );
 }
