@@ -4,6 +4,9 @@ import { Row, Col } from 'antd';
 // ---Components
 import Sec1Left from 'Comp/Courses/Seccion1/Left';
 import Sec1Rigth from 'Comp/Courses/Seccion1/Rigth';
+import Sec2Left from 'Comp/Courses/Seccion2/Left';
+import Sec3Left from 'Comp/Courses/Seccion3/Left';
+
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Courses(): ReactElement {
   return (
@@ -15,24 +18,12 @@ export default function Courses(): ReactElement {
         <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
           <Sec1Rigth />
         </Col>
-        {/*  <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
-          <Sec2Rigth />
+        <Col>
+          <Sec2Left />
         </Col>
-        <Col xs={24} sm={24} md={24} lg={24} xl={12} xxl={12}>
+        <Col>
           <Sec3Left />
         </Col>
-        <Col xs={24} sm={24} md={24} lg={24} xl={12} xxl={12}>
-          <Sec3Rigth />
-        </Col>
-        <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
-          <Sec4Left />
-        </Col>
-        <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
-          <Sec4Rigth />
-        </Col>
-        <Col span={24}>
-          <Sec5 />
-        </Col> */}
       </Row>
     </div>
   );
