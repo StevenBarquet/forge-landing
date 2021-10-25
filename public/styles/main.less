@@ -468,10 +468,24 @@ footer {
       left: 40px;
       top: 15px;
     }
+    .imagen1mov {
+      position: absolute;
+      width: calc(344px * 0.6);
+      height: calc(302px * 0.6);
+      left: 40px;
+      top: 15px;
+    }
     .imagen2 {
       position: absolute;
       width: 332px;
       height: 306px;
+      left: 244px;
+      top: 61px;
+    }
+    .imagen2mov {
+      position: absolute;
+      width: calc(332px * 0.6);
+      height: calc(306px * 0.6);
       left: 244px;
       top: 61px;
     }
@@ -1001,28 +1015,52 @@ footer {
       padding: 30px;
       .imagen {
         border-radius: 15px;
+        position: relative;
         height: 229px;
         width: 398px;
+        margin-bottom: 15px;
+      }
+      .imagenmov {
+        border-radius: 15px;
+        position: relative;
+        height: calc(229px * 0.6);
+        width: calc(398px * 0.6);
         margin-bottom: 15px;
       }
     }
   }
   .section-3 {
     background: linear-gradient(180deg, #414040 0%, rgba(0, 0, 0, 0.96) 100%);
-    .card{
+    h1 {
+      background: linear-gradient(
+        180deg,
+        #aeaeae 19.27%,
+        #ede0e0 55.73%,
+        #696464 96.35%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 28px;
+      padding: 10px;
+    }
+    .card {
       padding: 30px;
       .imagen {
         width: 384px;
         height: 238px;
         border-radius: 15px;
       }
-      h2 {     
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
+      .imagenmov {
+        width: calc(384px * 0.6);
+        height: calc(238px * 0.6);
+        border-radius: 15px;
       }
     }
     .section-3-1 {
+      padding: 20px;
       h2 {
         font-size: 21px;
         line-height: 24px;

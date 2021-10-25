@@ -4,19 +4,19 @@ import { ReactElement } from 'react';
 import { genericAlt } from 'Others/globalData';
 
 // ----------------------------------------COMPONENT----------------------------------------
-export default function Rigth(): ReactElement {
+export default function Rigth({ isMovil } : { isMovil: boolean }): ReactElement {
   return (
     <div className="img-section-1">
       <div>
         <img
-          className="imagen1"
+          className={isMovil ? 'imagen1mov' : 'imagen1'}
           src="/images/Services/img-1.jpeg" // Route of the image file
           alt={genericAlt}
         />
       </div>
       <div>
         <img
-          className="imagen2"
+          className={isMovil ? 'imagen2mov' : 'imagen2'}
           src="/images/Services/img-2.jpeg" // Route of the image file
           alt={genericAlt}
         />

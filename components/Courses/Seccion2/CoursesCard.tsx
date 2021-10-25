@@ -7,15 +7,18 @@ interface Props {
   imgRoute: string;
   text1:string;
   text2:string;
+  isMovil: boolean
 }
 
 // ----------------------------------------COMPONENT----------------------------------------
 export default function CoursesCard(props:Props): ReactElement {
-  const { imgRoute, text1, text2 } = props;
+  const {
+    imgRoute, text1, text2, isMovil
+  } = props;
   return (
     <div className="card">
       <img
-        className="imagen"
+        className={isMovil ? 'imagenmov' : 'imagen'}
         src={imgRoute}// Route of the image file
         alt={genericAlt}
       />

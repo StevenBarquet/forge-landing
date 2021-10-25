@@ -22,12 +22,12 @@ export default function SaldoContent(): ReactElement {
           <Divider />
           <h3>Tú saldo abonado actualmente.</h3>
           <Row justify="space-between">
-            <Col>
+            <Col span={12}>
               <h4>
                 Tiempo de cobertura en el servicio:
               </h4>
             </Col>
-            <Col>
+            <Col span={12}>
               <CountDown className="contador-saldo" finishDate={finishDate as unknown as number} isMovil={false} />
             </Col>
           </Row>
