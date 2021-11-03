@@ -6,9 +6,9 @@ import { Col, ColProps } from 'antd';
 // ------------------------------------TYPES---------------------------------------
 interface Props {
   children?: string | ReactElement | ReactElement[];
-  path: string;
-  currentPath: string;
-  grid: ColProps
+  path : string;
+  currentPath : string;
+  grid : ColProps
 }
 // -----------------------------------COMPONENT------------------------------------
 export default function NavButton(props: Props): ReactElement {

@@ -18,16 +18,16 @@ export default function CarouselSuccess(): React.ReactElement {
       items: 4
     },
     tablet: {
-      breakpoint: { max: 992, min: 576 },
+      breakpoint: { max: 992, min: 700 },
       items: 3
     },
     mobile: {
-      breakpoint: { max: 576, min: 0 },
+      breakpoint: { max: 700, min: 0 },
       items: 1
     }
   };
   return (
-    <div>
+    <div className="seccion-6-1">
       <Carousel
         swipeable
         draggable={false}
